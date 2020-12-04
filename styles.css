@@ -1,0 +1,168 @@
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Custom Properties, update these for your own design */
+
+:root {
+    --ff-primary: 'Roboto';
+    --ff-secondary: 'Montserrat', sans-serif;
+    
+    --fw-light:100;
+    --fw-reg: 300;
+    --fw-bold: 900;
+    
+    --clr-bgr: #242933;
+    --clr-light: #FFFFFF;
+
+    
+    --fs-h1: 2rem;
+    --fs-h2: 1.40rem;
+    --fs-h3: 1.20rem;
+    --fs-body: 0.9rem;
+
+    /* box shadow */
+    --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
+          0.125em 0.125em 0.25em rgba(0,0,0,.15);
+
+    --hover-transition: all 0.3s ease 0s;
+}
+
+
+/* @media (max-width: 800px) {
+    :root {
+        --fs-h1: 4.5rem;
+        --fs-h2: 3.75rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 1.125rem;
+    } */
+
+    
+
+
+/* General styles */
+    /* endable this to add smooth scrolling */
+    html {
+        scroll-behavior: smooth;
+    }
+
+    li, a, button{
+        font-size: var(--fs-body);
+        font-weight: var(--fw-bold);
+        text-decoration: none;
+    }
+
+    button {
+        
+        padding: 1em;
+        background-color: var(--clr-dark);
+        transition: var(--hover-transition);
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        color: white;
+    }
+    button:hover{
+        color: white;
+        background-color: var(--clr-accent)
+    }
+    html{
+        scroll-behavior:smooth;
+    }
+    html, body{
+ 
+        margin:0;
+        min-width: 100%;
+        min-height: 100%
+    }
+
+
+    body {
+        background: var(--clr-bgr);
+        color: var(--clr-light);
+        font-family: var(--ff-primary);
+        font-weight: var(--fw-reg);
+        font-size: var(--fs-body);
+        line-height: 1.6;
+        text-align: center;
+    }
+    p {
+        font-family: var(--ff-secondary);
+    }
+
+    section {
+        padding: 5em 2em;
+       
+    }
+    .section__title{
+        text-align: center;
+        padding-bottom: 0.5em;
+    }
+    .section__subtitle{
+        text-align: center;
+    }
+    .svg-icon {
+        -webkit-mask-size: contain;
+        mask-size: contain;
+        -webkit-mask-position: center;
+        mask-position: center;
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+      }
+
+
+
+/* ----- Typography ----- */
+    h1, h2, h3 {
+        line-height: 1;
+        margin: 0;
+        font-weight: var(--fw-bold);
+    }
+
+    h1 { font-size: var(--fs-h1) }
+    h2 { font-size: var(--fs-h2) }
+    h3 { font-size: var(--fs-h3) }
+
+    .section__title {
+        margin-bottom: .25em;
+    }
+/* ------------------ Welcome ------------------*/
+.welcome{
+    width: 100vw;
+    background: url(img/Kai_welcome_pic.jpg);
+    background-size: cover;
+}
+.skills{
+    display: flex;
+    
+}
+
+/* ------------------ My Work ------------------*/
+.myWork{
+    width: auto;
+   
+    
+}
+.myWork-list{
+    margin:0;
+    padding:0;
+    text-align:center;
+    background-color:blue;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto;
+    gap: 3em;
+    
+}
+.myWork-item{
+    
+    background-color: pink;
+}
+/* ------------------ About Me ------------------*/
+/* ------------------ Companies ------------------*/
+/* ------------------ Testimonials ------------------*/
+/* ------------------ Constact ------------------*/
+/* ------------------ Footer ------------------*/
